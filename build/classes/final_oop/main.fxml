@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_oop.mainController">
+   <children>
+      <Label layoutX="14.0" layoutY="129.0" prefHeight="19.0" prefWidth="353.0" text="BANG!!! Select the number of players to start the game!">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="104.0" fitWidth="423.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/bang%20logo.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="275.0" fitWidth="235.0" layoutX="414.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo/Bang-the-Dice-Game.jpg" />
+         </image></ImageView>
+      <Label layoutX="16.0" layoutY="305.0" prefHeight="18.0" prefWidth="646.0" text="In the U.S. wild west, the eternal battle between the law and the outlaws keeps heating up. Suddenly, a rain ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="323.0" prefHeight="18.0" prefWidth="632.0" text="of arrows darken the sky: It's an Indian attack! Are you bold enough to keep up with the Indians? Do you ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="16.0" layoutY="341.0" prefHeight="18.0" prefWidth="639.0" text="have the courage to challenge your fate? Can you expose and defeat the ruthless gunmen around you?">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="start" layoutX="289.0" layoutY="258.0" mnemonicParsing="false" onAction="#processPlayers" prefHeight="27.0" prefWidth="96.0" text="START">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <ComboBox fx:id="cb" layoutX="14.0" layoutY="157.0" prefHeight="27.0" prefWidth="96.0" />
+      <Label layoutX="14.0" layoutY="187.0" prefHeight="27.0" prefWidth="325.0" text="Select the Expansions you want to include in the game">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="223.0" text="OLD SALOON" />
+      <Label layoutX="162.0" layoutY="223.0" text="UNDEAD OR ALIVE" />
+      <ComboBox fx:id="cbOS" layoutX="14.0" layoutY="245.0" prefHeight="27.0" prefWidth="79.0" />
+      <ComboBox fx:id="cbUA" layoutX="177.0" layoutY="245.0" prefHeight="27.0" prefWidth="79.0" />
+   </children>
+</AnchorPane>

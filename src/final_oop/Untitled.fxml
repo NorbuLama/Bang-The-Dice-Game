@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_oop.PlayersFXMLController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="560.0" prefWidth="1000.0">
+         <left>
+            <VBox prefHeight="560.0" prefWidth="175.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TitledPane animated="false" text="Your information">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="451.0" prefWidth="163.0">
+                           <children>
+                              <Label layoutX="17.0" layoutY="14.0" text="Role : " />
+                              <Label layoutX="16.0" layoutY="38.0" text="Maximum HP :" />
+                              <Label fx:id="r1" layoutX="57.0" layoutY="14.0" text="Label" />
+                              <Label fx:id="hp1" layoutX="99.0" layoutY="38.0" text="Label" />
+                              <ImageView fx:id="p1r1" fitHeight="150.0" fitWidth="170.0" layoutX="2.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="p1c1" fitHeight="150.0" fitWidth="161.0" layoutX="1.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" top="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <right>
+            <TitledPane animated="false" text="Game's Information" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="534.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="11.0" layoutY="12.0" prefHeight="17.0" prefWidth="44.0" text="Sheriff :" />
+                        <Label layoutX="10.0" layoutY="233.0" text="Max Arrows  : " />
+                        <ImageView fitHeight="181.0" fitWidth="165.0" layoutX="9.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Roles/Sheriff.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="134.0" fitWidth="134.0" layoutX="8.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../DiceFaces/DiArrow.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="gamesrf" layoutX="75.0" layoutY="6.0" prefHeight="29.0" prefWidth="123.0" text="Label" />
+                        <Label fx:id="totalArrow" layoutX="97.0" layoutY="225.0" prefHeight="33.0" prefWidth="79.0" text="Label" />
+                        <Button layoutX="23.0" layoutY="396.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="114.0" text="Winner??" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </right>
+         <bottom>
+            <HBox prefHeight="95.0" prefWidth="1000.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets left="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Button fx:id="p1" mnemonicParsing="false" onAction="#PLayer1" prefWidth="150.0" text="PLayer 1" />
+                  <Button fx:id="p2" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 2" />
+                  <Button fx:id="p3" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 3" />
+                  <Button fx:id="p4" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 4" />
+                  <Button fx:id="p5" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 5" />
+                  <Button fx:id="p6" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 6" />
+                  <Button fx:id="p7" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 7" />
+                  <Button fx:id="p8" mnemonicParsing="false" onAction="#PLayer2" prefWidth="150.0" text="Player 8" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <Button fx:id="bigButton" mnemonicParsing="false" onAction="#Startthegame" prefHeight="56.0" prefWidth="449.0" text="!!!! BEFORE BEGINNIG THE GAME, CLICK THIS BUTTON !!!!" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
